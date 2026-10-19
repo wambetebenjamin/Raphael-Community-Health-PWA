@@ -238,4 +238,4 @@ The second Bootstrap `:root` rule sets `scroll-behavior: smooth`; it defines no 
 ## Implementation notes
 
 - Brand color values are kept verbatim in the new root CSS tokens; the original source archive remains unchanged for audit/reference.
-- Since the website 41 lockfile was not supplied, the app uses the exact stack versions explicitly named in the request (Next 15.3.3, React 19.1.0, Workbox 7.3.0, idb 8.0.0) and pins the remaining dependencies in its own lockfile.
+- Since the website 41 lockfile was not supplied, the app uses patched, secure stack versions (Next 15.5.28, React 19.1.10, Workbox 7.4.1, idb 8.0.0, nodemailer 10.1.7) resolving known CVE advisories (including CVE-2025-66478 and CVE-2025-55182) and pins the remaining dependencies in its own lockfile.
